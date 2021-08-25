@@ -1,0 +1,42 @@
+
+.about-header, .about-details {
+    width: 80vw;
+    margin: 0 auto;
+    line-height: 2;
+    height: auto;
+}
+.about-header{
+    font-size: 35px;
+    position: relative;
+}
+.about-header::after{
+    position: absolute;
+    content: "";
+    width: 53px;
+    border: 2px solid var(--logo-color-light);
+    bottom: 0;
+    left: 0;
+    background-color: var(--logo-color-light);
+}
+/* Desktop */
+@media screen and (min-width: 1010px) {
+
+    .about-details{
+        height: 37.5vh;
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 1010px){
+    .about-header{
+        font-size: 43px;
+        width: 93vw;
+    }
+    .about-header::after{
+        width: 65px;
+    }
+    .about-details{
+        width: 93vw;
+    }
+}

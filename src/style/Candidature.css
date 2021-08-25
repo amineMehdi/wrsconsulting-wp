@@ -1,0 +1,133 @@
+.candidature-container{
+    width: 80vw;
+    margin: 0 auto;
+}
+.job-header {
+    font-size: 45px;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.job-header::after {
+    position: absolute;
+    content: "";
+    width: 170px;
+    border: 2px solid var(--logo-color-light);
+    background-color: var(--logo-color-light);
+    left: 0;
+    bottom: 0;
+}
+
+input[type=file] {
+    display: none;
+}
+
+input[type=file]+label {
+    background-color: var(--logo-orange);
+    width: 200px;
+    text-align: center;
+    font-size: 16px !important;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: var(--btn-border-radius);
+    margin-bottom: 25px;
+}
+
+input[type=file]+label:hover {
+    color: white;
+}
+
+@media screen and (min-width: 1010px) {
+    .job-form-container {
+        width: 100%;
+    }
+
+    .job-form-container form {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+            "nom nom prenom prenom"
+            "email email email email"
+            "telephone telephone telephone telephone"
+            "adresse adresse adresse postal"
+            "ville ville pays pays"
+            "message message message message"
+            "cv cv motivation motivation"
+            "obligatoire obligatoire obligatoire obligatoire"
+            "button button button button";
+        margin-bottom: 35px;
+    }
+
+    #nom,
+    #email,
+    #telephone,
+    #adresse,
+    #ville,
+    #message {
+        height: 13vh;
+    }
+
+    #nom {
+        grid-area: nom;
+        margin-right: 25px;
+    }
+
+    #prenom {
+        grid-area: prenom;
+    }
+
+    #email {
+        grid-area: email;
+    }
+
+    #telephone {
+        grid-area: telephone;
+    }
+
+    #adresse {
+        grid-area: adresse;
+        margin-right: 25px;
+    }
+
+    #ville {
+        grid-area: ville;
+        margin-right: 25px;
+    }
+
+    #pays {
+        grid-area: pays;
+    }
+
+    #message {
+        grid-area: message;
+    }
+
+    #obligatoire {
+        grid-area: obligatoire;
+        height: 5vh;
+    }
+
+    #cv {
+        grid-area: cv;
+        margin-right: 25px;
+    }
+
+    #motivation {
+        grid-area: motivation;
+    }
+
+    .btn-submit {
+        grid-area: button;
+    }
+
+    #prenom,
+    #pays {
+        width: 95%;
+    }
+
+    #postal {
+        width: 85%;
+    }
+}

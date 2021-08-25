@@ -1,0 +1,28 @@
+.arrow-top-container {
+    position: fixed;
+    bottom: 15px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 99;
+    user-select: none;
+    background-color: var(--logo-orange);
+    border-radius: 50%;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.arrow-top-container span {
+    color: var(--logo-blue);
+    font-size: 32px;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}

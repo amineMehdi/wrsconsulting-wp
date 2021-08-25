@@ -1,0 +1,100 @@
+.developpement-container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.developpement-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+.developpement-header header{
+    font-size: 43px;
+}
+.developpement-header p{
+    font-size: 21px;
+}
+.developpement-header header span {
+    color: var(--logo-color-light);
+}
+
+.developpement-intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.developpement-intro-img {
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Desktop */
+@media screen and (min-width: 1010px) {
+
+    .developpement-header{
+        border-bottom: 2px solid var(--border-color);
+        -webkit-transition: border 0.5s ease;
+        -o-transition: border 0.5s ease;
+        transition: border 0.5s ease;
+    }
+    .developpement-header:hover{
+        cursor: default;
+        border-bottom-color: var(--logo-color-light);
+    }
+    .developpement-header header{
+        padding-bottom: 25px;
+    }
+    .developpement-intro {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .developpement-intro-img {
+        margin-right: 40px;
+        min-width: 25vw;
+        min-height: 250px;
+    }
+
+    .developpement-intro-details {
+        width: 55%;
+        /* line-height: 2; */
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 1010px) {
+    .developpement-header{
+        line-height: 2;
+    }
+    .developpement-intro{
+        margin-bottom: 5vh;
+    }
+    .developpement-intro-img{
+        width: 100vw;
+        min-height: 25vh;
+        margin-bottom: 20px;
+    }
+    .developpement-intro-details{
+        line-height: 2;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height:650px){
+    .developpement-intro-img{
+        height: 45vh;
+    }
+}

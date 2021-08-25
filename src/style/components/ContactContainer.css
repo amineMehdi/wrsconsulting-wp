@@ -1,0 +1,42 @@
+.home-contact-container {
+    position: relative;
+    width: 99vw;
+    height: 35vh;
+    margin-bottom: 10vh;
+    /* background: rgb(26, 102, 140); */
+    /* background: linear-gradient(110deg, rgba(26, 102, 140, 1) 0%, rgba(243, 150, 25, 1) 100%); */
+}
+
+.home-contact-header,
+.home-contact-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-contact-header {
+    top: 12%;
+    font-size: 35px;
+    color: black;
+}
+
+.home-contact-btn {
+    top: 50%;
+}
+
+/* Desktop */
+@media screen and (min-width: 1010px) {}
+
+
+/* Mobile */
+@media screen and (max-width: 1010px) {
+    .home-contact-header {
+        width: 95vw;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .home-contact-btn{
+        top: 61%;
+    }
+}
